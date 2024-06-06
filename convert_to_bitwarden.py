@@ -10,12 +10,12 @@ def convert_to_bitwarden(entries: list):
     for entry in entries:
         bitwarden_entry = {
             "folder": "",
-            "favorite": False,
-            "type": 1,
+            "favorite": "",
+            "type": "login",
             "name": entry["website"],
             "notes": "",
-            "fields": [],
-            "reprompt": False,
+            "fields": "",
+            "reprompt": 0,
             "login_uri": entry["website"],
             "login_username": entry["username"],
             "login_password": entry["password"],
