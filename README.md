@@ -1,4 +1,4 @@
-# Password Entry Extractor
+# iCloud Password Entry Extractor
 
 This Python script automates the process of extracting password entries from a specific application and saves them in a structured JSON format. It uses the `pywinauto` library to control and interact with Windows applications, and `pyperclip` for clipboard operations.
 
@@ -30,10 +30,22 @@ This Python script automates the process of extracting password entries from a s
 
 ## Usage
 
-1. Run the script:
+1. Open iCloud on Windows
+
+2. Enable Passwords and Keychain if not already enabled
+
+3. Click "View in iCloud Passwords App"
+
+4. Run the script:
 
    ```bash
-   python3 main.py
+   python3 extract_passwords.py
+   ```
+
+5. If you want to convert the extracted data to the bitwarden format, run:
+
+   ```bash
+   python3 convert_to_bitwarden.py
    ```
 
 ## Output
