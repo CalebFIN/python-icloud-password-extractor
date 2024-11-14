@@ -42,11 +42,20 @@ This Python script automates the process of extracting password entries from a s
    python3 extract_passwords.py
    ```
 
-5. If you want to convert the extracted data to the bitwarden format, run:
+5. To convert the extracted data to a specific format, run one of the following commands:
 
-   ```bash
-   python3 convert_to_bitwarden.py
-   ```
+   - For Bitwarden format:
+
+     ```bash
+     python3 convert_to_bitwarden.py
+     ```
+
+   - For Proton Pass format:
+
+     ```bash
+     python3 convert_to_protonpass.py
+     ```
+
 
 ## Output
 
